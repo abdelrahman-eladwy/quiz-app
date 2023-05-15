@@ -1,0 +1,38 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="display-5 fw-bold">Welcome to Quiz App</h1>
+      <p class="col-md-8 fs-4">
+        This quiz will contain a total of 9 questions. Each question is worth 10
+        points.
+      </p>
+      <h4>Rules:</h4>
+      <ol>
+        <li>Correct answers will earn you 10 points.</li>
+        <li>Incorrect answers will deduct 10 points.</li>
+        <li>You will have 60 seconds to answer each question.</li>
+        <li>Refreshing the page will reset the quiz.</li>
+      </ol>
+      <h1 style="font-family: cursive; text-align: center">All the best!!</h1>
+      <div class="name col-md-6 my-3">
+        <label for="name">Enter your name:</label>
+        <input #name type="text" id="name" class="form-control" />
+      </div>
+      <button
+        class="btn btn-primary btn-lg mat-button"
+        routerLink="/question"
+        (click)="storeUser()"
+      >
+        Start the Quiz!!
+      </button>
+    </div>
+    <div class="col-md-4 d-none d-md-block">
+      <img
+        src="https://cdn.discordapp.com/attachments/1092446982557143193/1107356630716252171/103060.jpg"
+        alt="Image"
+        class="img-fluid rounded-circle"
+        height="200px"
+      />
+    </div>
+  </div>
+</div>
