@@ -31,11 +31,11 @@
           <h5>{{ timer }} sec⏱</h5>
         </div>
       </div>
-      <div class="progress mb-1">
-        <div
-          class="progress-bar mb-1 mt-1 rounded"
-          [ngStyle]="{ width: progress + '%', 'background-color': '#0e6378' }"
-        ></div>
+      <div class="progress">
+        <div class="progress-bar" [style.width]="progress + '%'"></div>
+        <div class="progress-label">
+          {{ currentQuestion + 1 }} / {{ questionList.length }}
+        </div>
       </div>
       <div class="question">
         <div class="card">
@@ -75,6 +75,8 @@
           <p>Your Score: {{ points }} Points</p>
         </div>
       </div>
+
+      <app-quiz-review [questions]="questionList"></app-quiz-review>
     </ng-container>
   </div>
 </div>

@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeBgDirective } from './change-bg.directive';
+import { QuizReviewComponent } from './quiz-review/quiz-review.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ChangeBgDirective } from './change-bg.directive';
     QuestionComponent,
     HeaderComponent,
     ChangeBgDirective,
+    QuizReviewComponent,
   ],
   imports: [
     BrowserModule,

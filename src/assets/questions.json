@@ -1,10 +1,10 @@
 {
   "questions": [
     {
-      "questionText": "Which of the following does TypeScript use to specify types?",
+      "questionText": "Which of the following does HTML use to specify elements?",
       "options": [
         {
-          "text": ":",
+          "text": "<",
           "correct": true
         },
         {
@@ -17,159 +17,178 @@
           "text": "&"
         }
       ],
-      "explanation": "TS uses a colon (:) to separate the property name from the property type"
+      "explanation": "HTML uses the opening angle bracket (<) to specify elements"
     },
     {
-      "questionText": "Which of the following is NOT a type used in TypeScript?",
+      "questionText": "Which of the following is NOT a valid CSS selector?",
       "options": [
         {
-          "text": "number"
+          "text": "#id"
         },
         {
-          "text": "string"
-        },
-        {
-          "text": "boolean"
+          "text": ".class"
         },
         {
           "text": "enum",
           "correct": true
+        },
+        {
+          "text": "element"
         }
       ],
-      "explanation": "enum is not used as a type in TypeScript"
+      "explanation": "enum is not a valid CSS selector"
     },
     {
-      "questionText": "How can we specify properties and methods for an object in TypeScript?",
+      "questionText": "How can we apply styles to an element using JavaScript?",
       "options": [
         {
           "text": "Use classes."
         },
         {
-          "text": "Use interfaces.",
-          "correct": true
+          "text": "Use interfaces."
         },
         {
           "text": "Use enums."
         },
         {
-          "text": "Use async/await."
+          "text": "Use JavaScript functions.",
+          "correct": true
         }
       ],
-      "explanation": "interfaces are typically used to list the properties and methods for an object"
+      "explanation": "JavaScript functions are used to apply styles to an element dynamically"
     },
     {
-      "questionText": "How else can Array<number> be written in TypeScript?",
+      "questionText": "How can we select an element using its ID in JavaScript?",
       "options": [
         {
-          "text": "@number"
+          "text": "$('#id')"
         },
         {
-          "text": "number[]",
+          "text": "document.getElementById('id')",
           "correct": true
         },
         {
-          "text": "number!"
+          "text": "querySelector('#id')"
         },
         {
-          "text": "number?"
+          "text": "querySelectorAll('#id')"
         }
       ],
-      "explanation": "number[] is another way of writing Array<number> in TypeScript"
+      "explanation": "document.getElementById('id') is used to select an element by its ID"
     },
     {
-      "questionText": "In which of these does a class take parameters?",
+      "questionText": "Which of these methods is used to add a class to an element in JavaScript?",
       "options": [
         {
-          "text": "constructor",
+          "text": "element.addClass('className')"
+        },
+        {
+          "text": "element.classList.add('className')",
           "correct": true
         },
         {
-          "text": "destructor"
+          "text": "element.addClassList('className')"
         },
         {
-          "text": "import"
-        },
-        {
-          "text": "subscribe"
+          "text": "element.append('className')"
         }
       ],
-      "explanation": "a constructor is used by a class to take in parameters"
+      "explanation": "element.classList.add('className') is used to add a class to an element"
     },
     {
-      "questionText": "Which is NOT an access modifier?",
+      "questionText": "Which is NOT a valid value for the CSS display property?",
       "options": [
         {
-          "text": "private"
+          "text": "block"
         },
         {
-          "text": "protected"
+          "text": "inline"
         },
         {
-          "text": "public"
+          "text": "flex"
         },
         {
           "text": "async",
           "correct": true
         }
       ],
-      "explanation": "async is not used as an access modifier type in TypeScript"
+      "explanation": "async is not a valid value for the CSS display property"
     },
     {
-      "questionText": "Which keyword allows us to share information between files in TypeScript?",
+      "questionText": "Which property is used to change the font size in CSS?",
       "options": [
         {
-          "text": "import"
-        },
-        {
-          "text": "export",
+          "text": "font-size",
           "correct": true
         },
         {
-          "text": "async"
+          "text": "text-size"
         },
         {
-          "text": "constructor"
+          "text": "font-family"
+        },
+        {
+          "text": "font-weight"
         }
       ],
-      "explanation": "the export keyword allows for the information to be transmitted between files"
+      "explanation": "font-size is used to specify the size of the font in CSS"
     },
     {
-      "questionText": "Which is an array method to generate a new array based on a condition?",
+      "questionText": "Which is a valid value for the CSS background color property?",
       "options": [
         {
-          "text": "filter",
+          "text": "red"
+        },
+        {
+          "text": "#123456"
+        },
+        {
+          "text": "rgb(255, 0, 0)"
+        },
+        {
+          "text": "All of the above",
+          "correct": true
+        }
+      ],
+      "explanation": "All of the options are valid values for the CSS background color property"
+    },
+    {
+      "questionText": "How can we select multiple elements in JavaScript using a class?",
+      "options": [
+        {
+          "text": "$('.className')"
+        },
+        {
+          "text": "document.getElementsByClassName('className')",
           "correct": true
         },
         {
-          "text": "map"
+          "text": "querySelector('.className')"
         },
         {
-          "text": "async"
-        },
-        {
-          "text": "enum"
+          "text": "querySelectorAll('.className')"
         }
       ],
-      "explanation": "filter is a method used to conditionally create a new array"
+      "explanation": "document.getElementsByClassName('className') is used to select multiple elements by class name"
     },
     {
-      "questionText": "How is a property accessible within a class?",
+      "questionText": "How can we change the text content of an HTML element using JavaScript?",
       "options": [
         {
-          "text": "Using this.propertyName",
+          "text": "element.innerHTML"
+        },
+        {
+          "text": "element.innerText",
           "correct": true
         },
         {
-          "text": "Accessors"
+          "text": "element.textContent"
         },
         {
-          "text": "Destructuring"
-        },
-        {
-          "text": "Arrow function"
+          "text": "element.append('newText')"
         }
       ],
-      "explanation": "this.propertyName is the way to access a specific property within a class"
+      "explanation": "element.innerText is used to change the text content of an HTML element"
     }
   ]
 }

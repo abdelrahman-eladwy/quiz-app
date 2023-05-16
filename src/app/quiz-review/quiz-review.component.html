@@ -1,0 +1,21 @@
+<div class="review">
+  <h2 class="mb-4">Quiz Review</h2>
+  <div class="list-group">
+    <ng-container *ngFor="let question of questions">
+      <div class="list-group-item">
+        <h5 class="mb-3">{{ question.questionText }}</h5>
+        <p class="mb-0">
+          <strong class="badge bg-success text-white">Correct Answer:</strong>
+          <span class="correct-answer ms-2">{{
+            getCorrectAnswer(question)
+          }}</span>
+        </p>
+
+        <div class="answer-feedback mt-3">
+          <i class="bi bi-check-circle-fill text-success"></i>
+          <!-- Displaying a check icon for correct answer -->
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
